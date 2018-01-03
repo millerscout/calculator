@@ -1,4 +1,43 @@
-<script src="init.js"> </script>
+
+<style>
+    html, body{
+        background-color: black;
+    }
+    .titulo{
+        font-family: fantasy;
+        text-align: center;
+        color: white;
+    }
+    button{
+        color: blue;
+    }
+    #result{
+        color: white;
+    }
+</style>
+<script src="scripts/scripts.js">
+</script>
+<div class="titulo">
 <h1>
-    hello
+    Calculadora
 </h1>
+</div>
+<div id="hist" style="position:absolute; left:0; background:white"> </div>
+<center>
+<div id="result"></div>
+<div class="numeros">
+<button onclick="show('7')">7</button><button onclick="show('8')">8</button><button onclick="show('9')">9</button><br><br>
+<button onclick="show('4')">4</button><button onclick="show('5')">5</button><button onclick="show('6')">6</button><br><br>
+<button onclick="show('1')">1</button><button onclick="show('2')">2</button><button onclick="show('3')">3</button><br><br>
+</div>
+<div class="simbolos">
+<button onclick="add(soma)">+</button><button onclick="add(subtracao)">-</button>
+    <button onclick="show(equal())">=</button>
+</div>
+    <br>
+<button onclick="Clear()">Limpar</button>
+<br>
+<br>
+    <button onclick="imprimir()">Imprimir</button>
+    
+</center>
